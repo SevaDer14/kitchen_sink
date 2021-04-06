@@ -28,6 +28,7 @@ Return: a string formatted as a list of names separated by commas except for the
 =end
 
 # MY VERSION
+
 def list names
   output = ''
   last = names.length() - 1
@@ -43,6 +44,8 @@ def list names
     end
   output
 end
+
+
 
 # TOP KATA
 def list names
