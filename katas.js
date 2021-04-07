@@ -19,13 +19,8 @@ function alphabetPosition(text) {
 // TOP ANSWER
 function alphabetPosition(text) {
     return text
-      .toUpperCase()
+      .toLowerCase()
       .match(/[a-z]/gi)
-      .map( (c) => c.charCodeAt() - 64)
+      .map( (c) => c.charCodeAt() - 96)
       .join(' ');
-  }
-
-// ONE LINER
-function alphabetPosition(text) {
-    return text.match(/[a-zA-Z]/g).map( (el) => el.toLowerCase().charCodeAt() - 96 ).join(' ');
   }
